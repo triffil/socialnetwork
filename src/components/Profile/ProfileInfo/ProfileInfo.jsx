@@ -1,11 +1,11 @@
 import React from "react";
-import style from './Bio.module.css'
-import AboutBio from "./AboutBio/AboutBio";
+import style from './ProfileInfo.module.css'
+import Bio from "./Bio/Bio";
 
 
 
 
-const Bio = (props) => {
+const ProfileInfo = (props) => {
     return (
         <div>
             <div>
@@ -14,9 +14,9 @@ const Bio = (props) => {
                     src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html.jpg"
                 />
             </div>
-            <AboutBio />
+            <Bio />
         </div>
     )
 }
 
-export default Bio;
+export default ProfileInfo;

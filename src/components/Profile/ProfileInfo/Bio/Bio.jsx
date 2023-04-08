@@ -1,7 +1,7 @@
-import style from './AboutBio.module.css';
+import style from './Bio.module.css';
 import React from "react";
 
-const AboutBio = (props) => {
+const Bio = (props) => {
     return (
         <div className={`${style.profile} mt-20 mb-20`}>
             <img
@@ -21,4 +21,4 @@ const AboutBio = (props) => {
     )
 }
 
-export default AboutBio;
+export default Bio;

@@ -1,0 +1,17 @@
+.createPost {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputPost {
+  padding: 10px;
+}
+
+.btnSend {
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+
+

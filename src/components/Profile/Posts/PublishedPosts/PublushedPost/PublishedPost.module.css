@@ -1,0 +1,17 @@
+.postLogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-right: 40px;
+}
+
+.postBody {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+.postText {
+  margin-right: 500px;
+}
