@@ -1,0 +1,12 @@
+
+.profile {
+    display: flex;
+}
+
+.logo {
+    width: 120px;
+}
+
+.infoList {
+    list-style: none;
+}
