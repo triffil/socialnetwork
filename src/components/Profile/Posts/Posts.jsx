@@ -1,14 +1,13 @@
 import React from "react";
 import CreatePost from "./CreatePost/CreatePost";
-import posts from './Posts.module.css'
 import PublishedPosts from "./PublishedPosts/PublishedPosts";
 
 
-const Posts = () => {
+const Posts = (props) => {
   return (
-      <div className='posts'>
+      <div>
         <CreatePost />
-        <PublishedPosts />
+        <PublishedPosts state={props.state}/>
       </div>
   )
 }

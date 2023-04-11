@@ -1,0 +1,19 @@
+.dialogWrapper {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogItem {
+    margin-bottom: 20px;
+}
+
+.dialogList {
+    list-style: none;
+
+    padding-left: 20px;
+    margin: 0;
+}
+
+.messageItem {
+    margin-bottom: 20px;
+}

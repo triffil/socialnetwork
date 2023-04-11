@@ -1,32 +1,8 @@
-.dialogs {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-}
 
-.dialog {
-
-}
-
-.dialogList {
-    list-style: none;
-
-    padding-left: 20px;
-    margin: 0;
-}
-
-.dialogItem {
-    margin-bottom: 20px;
-}
 
 .active {
     color: gold;
 }
 
-.dialogContent {
 
-}
 
-.messageItem {
-    margin-bottom: 20px;
-
-}

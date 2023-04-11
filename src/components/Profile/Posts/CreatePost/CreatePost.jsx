@@ -4,7 +4,7 @@ import style from './CreatePost.module.css'
 
 const CreatePost = () => {
   return (
-      <div className='posts'>
+      <div>
         <div className={`${style.createPost} mb-20`}>
           <p>Create new post</p>
           <textarea
