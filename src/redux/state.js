@@ -28,4 +28,12 @@ let state = {
     navbarPage: {}
 }
 
+export let addPost = (postBody) => {
+    let newPost = {
+        id: 7,
+        body: postBody,
+        countLike: 0,
+    }
+    state.profilePage.postsFromServer.push(newPost);
+}
 export default state;

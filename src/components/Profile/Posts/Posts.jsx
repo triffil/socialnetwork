@@ -6,7 +6,7 @@ import PublishedPosts from "./PublishedPosts/PublishedPosts";
 const Posts = (props) => {
   return (
       <div>
-        <CreatePost />
+        <CreatePost addPost={props.addPost}/>
         <PublishedPosts state={props.state}/>
       </div>
   )
