@@ -1,3 +1,6 @@
+import {rerenderEntireTree} from "../render";
+
+
 let state = {
     profilePage: {
         postsFromServer : [
@@ -35,5 +38,6 @@ export let addPost = (postBody) => {
         countLike: 0,
     }
     state.profilePage.postsFromServer.push(newPost);
+    rerenderEntireTree(state);
 }
 export default state;

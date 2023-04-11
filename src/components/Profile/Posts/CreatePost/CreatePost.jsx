@@ -6,9 +6,8 @@ const CreatePost = (props) => {
     let newLet = React.createRef()
     const sendPost = () => {
         let finalLet = newLet.current.value;
-        props.addPost(finalLet)
+        props.addPost(finalLet);
     }
-
 
   return (
       <div>
