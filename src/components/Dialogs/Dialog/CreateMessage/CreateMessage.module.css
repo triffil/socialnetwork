@@ -1,0 +1,15 @@
+.createMessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputMessage {
+    padding: 10px;
+
+}
+
+.btnSend {
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px 0;
+}

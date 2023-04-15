@@ -10,7 +10,8 @@ let state = {
             {id: 4, body: 'Post4', countLike: 17},
             {id: 5, body: 'Post5', countLike: 8},
             {id: 6, body: 'Post6', countLike: 18},
-        ]
+        ],
+        newPostText: '',
     },
     dialogPage: {
         dialogUsers : [
@@ -26,18 +27,37 @@ let state = {
             {id: 3, message: 'Message3'},
             {id: 4, message: 'Message4'},
             {id: 5, message: 'Message5'},
-        ]
+        ],
+        newMessageText: '',
     },
     navbarPage: {}
 }
+export let updateNewMessageText = (messageText) => {
+    state.dialogPage.newMessageText = messageText;
+    rerenderEntireTree(state);
+}
 
-export let addPost = (postBody) => {
+export let sendMessage = () => {
+    let newMessage = {
+        id: 6,
+        message: state.dialogPage.newMessageText,
+    }
+    state.dialogPage.dialogMessages.push(newMessage);
+    state.dialogPage.newMessageText = '';
+    rerenderEntireTree(state);
+}
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+export let addPost = () => {
     let newPost = {
         id: 7,
-        body: postBody,
+        body: state.profilePage.newPostText,
         countLike: 0,
     }
     state.profilePage.postsFromServer.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
 }
 export default state;

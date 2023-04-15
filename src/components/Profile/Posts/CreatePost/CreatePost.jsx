@@ -3,17 +3,20 @@ import style from './CreatePost.module.css'
 
 
 const CreatePost = (props) => {
-    let newLet = React.createRef()
+    let newPostElement = React.createRef()
     const sendPost = () => {
-        let finalLet = newLet.current.value;
-        props.addPost(finalLet);
+        props.addPost();
+    }
+    let onPostChange = () => {
+        let textareaValue = newPostElement.current.value;
+        props.updateNewPostText(textareaValue)
     }
 
   return (
       <div>
         <div className={`${style.createPost} mb-20`}>
           <p>Create new post</p>
-          <textarea ref={newLet}
+          <textarea onChange={onPostChange} value={props.newPostText} ref={newPostElement}
             className={`${style.inputPost} mb-20`}
             placeholder="your news..."
             rows={2}
