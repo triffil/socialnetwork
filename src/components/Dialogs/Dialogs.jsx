@@ -11,7 +11,7 @@ import Dialog from "./Dialog/Dialog";
 const Dialogs = (props) => {
     return (
         <div className={style.dialogs}>
-            <Dialog sendMessage={props.sendMessage} updateNewMessageText={props.updateNewMessageText} state={props.state}/>
+            <Dialog dispatch={props.dispatch} state={props.state}/>
         </div>
     )
 }

@@ -6,7 +6,7 @@ import PublishedPosts from "./PublishedPosts/PublishedPosts";
 const Posts = (props) => {
   return (
       <div>
-        <CreatePost newPostText={props.newPostText} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
+        <CreatePost newPostText={props.newPostText} dispatch={props.dispatch}/>
         <PublishedPosts state={props.state}/>
       </div>
   )

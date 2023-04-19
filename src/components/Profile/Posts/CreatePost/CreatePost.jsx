@@ -5,11 +5,13 @@ import style from './CreatePost.module.css'
 const CreatePost = (props) => {
     let newPostElement = React.createRef()
     const sendPost = () => {
-        props.addPost();
+        props.dispatch({type: 'ADD-POST'});
     }
     let onPostChange = () => {
         let textareaValue = newPostElement.current.value;
-        props.updateNewPostText(textareaValue)
+        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: textareaValue};
+        props.dispatch(action)
+
     }
 
   return (

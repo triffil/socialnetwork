@@ -11,7 +11,7 @@ const Dialog = (props) => {
     return (
         <div>
             <DialogContent state={props.state}/>
-            <CreateMessage sendMessage={props.sendMessage} updateNewMessageText={props.updateNewMessageText} newMessageText={props.state.newMessageText}/>
+            <CreateMessage dispatch={props.dispatch} newMessageText={props.state.newMessageText}/>
         </div>
         )
 
