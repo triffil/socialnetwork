@@ -1,17 +1,18 @@
 import React from "react";
 import style from './CreatePost.module.css'
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../../redux/profile-reducer";
+
 
 
 const CreatePost = (props) => {
     let newPostElement = React.createRef()
     const sendPost = () => {
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator());
     }
     let onPostChange = () => {
         let textareaValue = newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: textareaValue};
-        props.dispatch(action)
-
+        let action = updateNewPostTextActionCreator(textareaValue);
+        props.dispatch(action);
     }
 
   return (
